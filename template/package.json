@@ -1,0 +1,19 @@
+{
+    "name": "stric",
+    "module": "index.ts",
+    "type": "module",
+    "devDependencies": {
+        "bun-types": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@stricjs/router": "^4.0.6",
+        "@stricjs/utils": "^1.3.8"
+    },
+    "scripts": {
+        "dev": "bun run --watch src/index.ts",
+        "db:init": "bun src/scripts/databases/init.ts"
+    }
+}
