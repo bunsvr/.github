@@ -4,7 +4,7 @@ A web framework for a new generation of JavaScript, [Bun.js](https://bun.sh)!
 import { Router } from "@stricjs/router";
 
 // Create a new router
-export default new Router();
+export default new Router()
     // Add a route handler
     .get("/", () => new Response("Hello!"))
 ```
