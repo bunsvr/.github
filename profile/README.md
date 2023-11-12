@@ -1,4 +1,4 @@
-<h1>Stric</h1><br/>
+<h1 style='text-decoration:none'>Stric</h1>
 A web framework focused on performance and scalability.
 
 ```typescript
@@ -15,5 +15,5 @@ export function main() {
 
 Stric is one of the fastest Bun HTTP framework. See [benchmark](https://github.com/bunsvr/benchmark) for more details.
 
-<h2>License</h2><br/>
+<h2 style='text-decoration:none'>License</h2>
 This license applied to the whole project, see [LICENSE.md](/LICENSE.md).
