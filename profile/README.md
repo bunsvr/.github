@@ -1,3 +1,4 @@
+# Stric
 A web framework focused on performance and scalability.
 
 ```typescript
@@ -14,7 +15,5 @@ export function main() {
 
 Stric is one of the fastest Bun HTTP framework. See [benchmark](https://github.com/bunsvr/benchmark) for more details.
 
-The documentation is under construction, you can see it [here](https://stricjs.netlify.app).
-
-# License 
+## License 
 This license applied to the whole project, see [LICENSE.md](/LICENSE.md).
