@@ -1,17 +1,20 @@
-A web framework for a new generation of JavaScript, [Bun.js](https://bun.sh)!
+A web framework focused on performance and scalability.
 
 ```typescript
-import { Router } from "@stricjs/router";
+import { routes } from '@stricjs/app';
+import { text, json } from '@stricjs/app/send';
 
-// Create a new router
-export default new Router();
-    // Add a route handler
-    .get("/", () => new Response("Hello!"))
+// Each route file exports a main function
+export function main() {
+    return routes()
+        .get('/', () => text('Hi'))
+        .post('/json', c => c.json().then(json));
+}
 ```
 
 Stric is one of the fastest Bun HTTP framework. See [benchmark](https://github.com/bunsvr/benchmark) for more details.
 
-The documentation is under construction, you can see it [here](https://stricjs.gitbook.io).
+The documentation is under construction, you can see it [here](https://stricjs.netlify.app).
 
 # License 
 This license applied to the whole project, see [LICENSE.md](/LICENSE.md).
