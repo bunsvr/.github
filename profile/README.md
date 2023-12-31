@@ -9,7 +9,6 @@ import { text, json } from '@stricjs/app/send';
 export default routes()
     .get('/', () => text('Hi'))
     .post('/json', c => c.req.json().then(json));
-}
 ```
 
 Stric is one of the fastest Bun HTTP framework. See [benchmark](https://github.com/bunsvr/benchmark) for more details.
