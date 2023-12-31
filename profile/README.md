@@ -5,11 +5,10 @@ A web framework focused on performance and scalability.
 import { routes } from '@stricjs/app';
 import { text, json } from '@stricjs/app/send';
 
-// Each route file exports a main function
-export function main() {
-    return routes()
-        .get('/', () => text('Hi'))
-        .post('/json', c => c.json().then(json));
+// Each route file exports a routes store
+export default routes()
+    .get('/', () => text('Hi'))
+    .post('/json', c => c.req.json().then(json));
 }
 ```
 
